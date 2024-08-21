@@ -57,7 +57,7 @@ setup_ray_cluster(
     num_cpus_head_node=6,
     max_worker_nodes=NUM_OF_WORKER_NODES,
     actor_creation_timeout=600,
-    collect_log_to_path="/dbfs/tmp/raylogs",
+    collect_log_to_path="/ray_paths",
 )
 
 # COMMAND ----------
@@ -124,7 +124,7 @@ def summarize_llm(chkpt, access_token, txt_list):
 def read_parquet(file_path):
     return pd.read_parquet(file_path)
 
-parquet_file_path = "/dbfs/tmp/data/womenshealth_inf_rmc_reporttext_pairedsample" 
+parquet_file_path = "/data_source" 
 pdf = ray.get(read_parquet.remote(parquet_file_path))
 
 # COMMAND ----------
