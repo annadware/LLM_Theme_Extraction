@@ -97,8 +97,7 @@ def summarize_llm(chkpt, access_token, txt_list):
   Below are examples of gynecological clinical notes and the associated themes:
 
   Example 1:
-
-  Clinical Note: "We present the case of a 42-year-old (gravida 2, abortion 2 (G2A2)) infertile woman who visited an infertility clinic with her husband (aged 42 years). She had been married for eight years and had two abortions during this time. After the second abortion, dilatation and curettage (D&C) was done at her hometown hospital. This is a case of secondary infertility. Before coming to our center, she visited another center for infertility treatment, where in vitro fertilization (IVF) was done using self-oocyte, but intracytoplasmic sperm injection (ICSI) was not done. Unfortunately, the treatment did not succeed. On hysteroscopy, adhesions were found in the cavity, which were possibly formed due to the D&C procedure performed for past abortions. This condition is known as Asherman’s syndrome. Hence, hystero-adhesiolysis was done on January 20, 2021. Her latest report showed an anti-Mullerian hormone (AMH) value of 0.252 ng/dL, which was very low. Low AMH was indicative of low ovarian reserve. Her follicle-stimulating hormone (FSH) was 23 mIU/mL, which was too high, suggestive of poor egg quality. The antral follicular count was assessed through transvaginal ultrasound; the total count was three (one on the right, and two on the left). Ovum pick-up was done on March 15, 2021."
+  Clinical Note: {example synthetic note #1}
   
   Themes:
   1. Infertile
@@ -108,31 +107,7 @@ def summarize_llm(chkpt, access_token, txt_list):
   
 
   Example 2: 
-  
-  Clinical Note: "chief complaint (cc)/reason for visit:
-  ms. smith is a 32 old female. she is here for 
-  evaluation and treatment of medical conditions noted below.
-
-    according to the history provided today, patient has following issues:
-    1. veteran states that she has been having seizures. she states that
-    she starts coughing, coughs so hard that she has bloody streaks in
-    her phlegm, and then enters into a "fullblown full body" seizure.
-    she states that witnesses have told her she shakes all over and goes
-    in and out of consciousness. she says that she has been having these
-    seizures about twice a month for a year and a half, but has never
-    sought medical care for this. she states that these episodes last
-    30-60 minutes each. she states that she has not been using any drugs,
-    and that the seizures have not been in any proximal connection to
-    drug usage.
-
-    2. veteran states that she wants very much to get pregnant. her
-    significant other has four children already, the youngest four years
-    old, and has said that she is not willing to get pregnant again,
-    so veteran wants to be the one to have a baby. she states that she
-    has a source of semen but that she doesn't seem to be able to stay
-    pregnant. she claims to have had seven miscarriages. she would like
-    an appointment with gynecology to determine why she is having recurrent
-    miscarriages.
+  Clinical Note: {example synthetic note #2}
 
   Themes:
   1. Seizure episodes reported
