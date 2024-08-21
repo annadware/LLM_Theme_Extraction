@@ -96,6 +96,8 @@ def summarize_llm(chkpt, access_token, txt_list):
 
   Below are examples of gynecological clinical notes and the associated themes:
 
+#ALL NOTE EXAMPLES USED SYNTHETIC PATIENT DATA FOR ILLUSTRATIVE PURPOSES ONLY
+
   Example 1:
   Clinical Note: {example synthetic note #1}
   
