@@ -51,7 +51,7 @@ setup_ray_cluster(
     num_cpus_head_node=6,
     max_worker_nodes=NUM_OF_WORKER_NODES,
     actor_creation_timeout=600,
-    collect_log_to_path="/dbfs/tmp/raylogs",
+    collect_log_to_path="/ray_log_path",
 )
 
 # COMMAND ----------
@@ -139,7 +139,7 @@ Now, please analyze the following gynecological clinical note and list up to 5 h
 def read_parquet(file_path):
     return pd.read_parquet(file_path)
 
-parquet_file_path = "/dbfs/tmp/data/womenshealth_inf_rmc_reporttext_pairedsample" 
+parquet_file_path = "/file_source" 
 pdf = ray.get(read_parquet.remote(parquet_file_path))
 
 # COMMAND ----------
@@ -196,4 +196,4 @@ print(result_df.head())
 # COMMAND ----------
 
 # Save results to a CSV file
-result_df.to_csv("/dbfs/tmp/clinical_notes_finalthemes.csv", index=False)
+result_df.to_csv("/clinical_notes_finalthemes.csv", index=False)
